@@ -3,43 +3,47 @@
 
 ## 🎯 Objective
 
-Build the classic word-guessing game using Python strings, loops, and user input. Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+Build the classic word-guessing game in Python using strings, loops, conditionals, and user input. Students will implement a simplified Hangman-style game where players guess letters to reveal a hidden word before running out of attempts.
 
 ## 📝 Tasks
 
-### 🛠️	Game Setup and Word Selection
+### 🛠️ Game Setup and Word Selection
 
 #### Description
-Set up the game structure and implement random word selection from a predefined list.
+Create the game scaffold and select a random secret word from a predefined list.
 
 #### Requirements
 Completed program should:
-
 - Define a list of words for the game
-- Randomly select a word from the list
-- Initialize game state (hidden word display, attempts remaining)
+- Randomly select one word from the list
+- Initialize game state variables (`attempts`, `guessed_letters`, `display_word`)
 
-### 🛠️	Letter Guessing and Progress Tracking
+### 🛠️ Letter Guessing and Progress Tracking
 
 #### Description
-Implement the core game loop that accepts letter guesses and updates the game progress.
+Implement the main game loop to accept guesses, validate input, and update progress display.
 
 #### Requirements
 Completed program should:
+- Accept single-letter guesses from the user (case insensitive)
+- Show current word progress with unrevealed letters as underscores (e.g., `h _ n g m _ n`)
+- Track correct and incorrect guesses separately
+- Decrement remaining attempts on wrong guesses
 
-- Accept letter guesses from the user
-- Show current progress in _ _ _ format for unguessed letters
-- Track incorrect guesses remaining
-- Update the display after each guess
-
-### 🛠️	Win/Lose Conditions
+### 🛠️ Win/Lose Conditions
 
 #### Description
-Add logic to check for win or lose conditions and display appropriate messages.
+Add game completion checks and user feedback for win/lose outcomes.
 
 #### Requirements
 Completed program should:
+- Detect a win when all letters are guessed
+- Detect a loss when attempts run out
+- Display final win/lose message and reveal the full secret word
 
-- End the game when the word is fully guessed
-- End the game when attempts are exhausted
-- Display win/lose messages with the correct word revealed
+## 📌 Optional Enhancements (stretch goals)
+
+- Allow the user to guess the full word
+- Prevent duplicate guess penalties
+- Add ASCII art for hangman stages
+
